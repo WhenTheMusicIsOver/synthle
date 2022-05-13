@@ -76,3 +76,44 @@ core.on('load', function() {
   node.connect(ctx.destination);
 })();
 ```
+
+----
+```
+/src 
+    /Shared
+      /domain
+      /infrastructure
+        /helpers
+      /ui
+        /style
+          appTheme.ts
+    /Synthle
+      /domain
+        /entities
+          - SoundWave
+        /useCase
+      /infrastructure
+        /hooks
+      /ui
+        /MainSynth
+          /component
+          /feature
+          /style
+        /VCOComponent
+           /component
+           /feature
+           /style
+        /LFOComponent
+           /component
+           /feature
+           /style
+        /VolumeComponent
+           /component
+           /feature
+           /style
+        /ADSRComponent
+           /component
+           /feature
+           /style
+  ```  
+
