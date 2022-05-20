@@ -13,8 +13,6 @@ export const useMainComponentStyles = makeStyles((theme: MainComponentStylesThem
     root: {
         width: '100%',
         height: '100vh',
+        textAlign:'center',
     },
-    container: {
-        backgroundColor: mediumGrey,
-    }
 }));

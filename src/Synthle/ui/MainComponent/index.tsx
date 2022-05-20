@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material';
-import { Box, Container } from '@mui/system';
+import { Box } from '@mui/system';
 import { useMainComponentStyles } from './styles/MainComponent.styles';
 
 type SynthleMainComponent = {
@@ -10,8 +10,8 @@ export default function SynthleMainComponent({}: SynthleMainComponent) {
     const classes = useMainComponentStyles();
 
     return (
-        <Container>
-            <Typography variant="h1">Main Component</Typography>
-        </Container>
+        <Box className={classes.root} component="div">
+            <Typography variant="h1">Synthle</Typography>
+        </Box>
     );
 }
