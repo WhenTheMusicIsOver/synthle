@@ -15,7 +15,7 @@
         "isolatedModules": true,
         "jsx": "preserve",
         "incremental": true,
-        "types": ["cypress"], "src/synthle/ui/MainComponent/component/.gitkeep"
+        "types": ["cypress"],
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "src/Shared/infrastructure/setupTests.ts"]
