@@ -1,4 +1,5 @@
 import { makeStyles } from '@mui/styles';
+import { mediumGrey } from '../../../../shared/ui/styles/colors';
 
 interface MainComponentStylesTheme {
     mixins: any;
@@ -11,5 +12,9 @@ interface MainComponentStylesTheme {
 export const useMainComponentStyles = makeStyles((theme: MainComponentStylesTheme) => ({
     root: {
         width: '100%',
+        height: '100vh',
     },
+    container: {
+        backgroundColor: mediumGrey,
+    }
 }));
