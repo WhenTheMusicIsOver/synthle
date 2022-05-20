@@ -1,16 +1,16 @@
 # synthle
+
 A simple synth
 
-
 Features:
-- Web UI  
 
-- Edit OSC 
-- Edit Filter [24db LPF]
-- Edit ADSR [EG]
-- Edit AMP
-- Edit LFO (frequency)
+-   Web UI
 
+-   Edit OSC
+-   Edit Filter [24db LPF]
+-   Edit ADSR [EG]
+-   Edit AMP
+-   Edit LFO (frequency)
 
 ```
 // Welcome to the starting template! Follow along with the comments below
@@ -29,7 +29,7 @@ core.on('load', function() {
     if (ctx.state === 'suspended') {
       await ctx.resume();
     }
-    
+
     let synthVoice = (hz) => el.mul(
       0.25,
       el.add(
@@ -52,7 +52,7 @@ core.on('load', function() {
       1,
       x
     );
-    
+
     let dry = el.mul(0.25, filt(synthVoice(el.seq({seq: arp, hold: true}, train))));
     let wet = el.mul(0.25, el.freeverb({name: 'fv'}, 0.94, 0.14, dry));
 
@@ -77,9 +77,10 @@ core.on('load', function() {
 })();
 ```
 
-----
+---
+
 ```
-/src 
+/src
     /Shared
       /domain
       /infrastructure
@@ -115,5 +116,4 @@ core.on('load', function() {
            /component
            /feature
            /style
-  ```  
-
+```
